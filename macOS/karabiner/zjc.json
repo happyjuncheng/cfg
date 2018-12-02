@@ -21,6 +21,43 @@
           ]
         }
       ]
+    },
+    {
+      "description": "disable caps_lock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "key_code": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Toggle caps_lock by pressing right_shift + caps_lock at the same time",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
